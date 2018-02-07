@@ -45,3 +45,16 @@
     background: #fff;
     margin: 4em 0 1em 0;
 }
+.menu_lateral--item{
+    padding:  0 0 0 2em;
+}
+.menu_lateral--item{
+    color: #fff;
+    font-size: 15px;
+}
+.menu_lateral--item:hover{
+    color: rgb(133, 133, 133);
+}
+.menu_lateral--item a:hover{
+    color: rgb(133, 133, 133);
+}
