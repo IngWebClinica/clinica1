@@ -24,3 +24,4 @@ Route::get('/usuario', function () {
     return view('usuario');
 });
 
+
