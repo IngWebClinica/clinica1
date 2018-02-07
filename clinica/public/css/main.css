@@ -58,3 +58,11 @@
 .menu_lateral--item a:hover{
     color: rgb(133, 133, 133);
 }
+
+.contenedor--contenido_titulo{
+    padding: 1em 0 0 0;
+}
+
+.seccion-tabla{
+    padding: 10em;
+}
