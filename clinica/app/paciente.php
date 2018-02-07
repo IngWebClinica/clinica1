@@ -8,4 +8,5 @@ class paciente extends Model
 {
     //conectamos la tabla pacientes
     protected $table = 'pacientes';
+    public $timestamps =false;
 }

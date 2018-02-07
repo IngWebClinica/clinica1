@@ -8,4 +8,5 @@ class usuario extends Model
 {
     //defnimos la tabla
     protected $table = 'usuarios';
+    public $timestamps =false;
 }

@@ -81,27 +81,22 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Nick</th>
                                 <th scope="col">tipo</th>
+                                <th scope="col">Accion</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>admin</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>invitado</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>admin</td>
-                              </tr>
+                                @foreach ($usuarios as $usuario)
+                                    <tr>
+                                        <th scope="row">{{ $usuario->id_usuario }}</th>
+                                        <td>{{ $usuario->nombre }}</td>
+                                        <td>{{ $usuario->nick }}</td>
+                                        <td>{{ $usuario->tipo_usuario }}</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-warning">Editar</button>
+                                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </seccion>
@@ -122,37 +117,40 @@
             </div>
             <div class="modal-body">
               <!--contedor-modal--conteido-->
-              <form>
+              <form action="/usuario" method="POST">
+                {{ csrf_field() }}
                 <div class="form-group">
                   <label for="recipient-name" class="col-form-label">Nombre</label>
-                  <input type="name" class="form-control" id="recipient-name">
+                  <input type="name" name="nombre"  class="form-control" id="recipient-name">
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Apellido</label>
-                    <input type="lastname" class="form-control" id="recipient-name">
+                    <input type="lastname" name="apellido" class="form-control" id="recipient-name">
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Nick</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <input type="text" name="nick" class="form-control" id="recipient-name">
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="recipient-name">
+                    <input type="password" name="contra" class="form-control" id="recipient-name">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">tipo usuario</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" name="tipo" id="exampleFormControlSelect1">
                       <option>admin</option>
                       <option>invitado</option>
                       <option>secretaria</option>
                     </select>
                   </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Gardar</button>
+                  </div>
               </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Gardar</button>
-            </div>
+            
+            
           </div>
         </div>
       </div>
