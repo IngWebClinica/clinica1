@@ -41,3 +41,7 @@
 .contenedor{
     background: #dfe6e9;
 }
+.contenedor--contenido{
+    background: #fff;
+    margin: 4em 0 1em 0;
+}

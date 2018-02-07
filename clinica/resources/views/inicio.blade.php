@@ -46,8 +46,8 @@
                         </li>
                     </ul>
             </div>
-            <div class="col-10 contenedor align-items-stretch">
-                <seccion class="bg-info">
+            <div class="col-10 contenedor align-items-stretch d-flex justify-content-center align-items-center">
+                <seccion class="container contenedor--contenido">
 
                 </seccion>
             </div>
