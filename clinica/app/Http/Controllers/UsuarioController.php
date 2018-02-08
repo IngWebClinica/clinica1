@@ -24,4 +24,9 @@ class UsuarioController extends Controller
         $usuarios = usuario::all();
         return view('/usuario',['usuarios'=>$usuarios]);
     }
+    public function delete($id){
+        $usuario=usuario::findOrFail($id);
+        $usuario->delete();
+        return redict('/usuario');
+    }
 }

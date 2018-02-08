@@ -22,5 +22,18 @@ Route::get('/login', function () {
 });
 Route::get('/usuario', 'UsuarioController@read');
 Route::post('/usuario','UsuarioController@create');
+Route::post('/usuario/{id}','UsuarioController@delete');
 
+Route::post('/pacientes', 'PacienteController@create');
+Route::get('/pacientes', 'PacienteController@read');
+
+Route::get('/medicos', function () {
+    return view('medico');
+});
+Route::get('/atenciones', function () {
+    return view('atenciones');
+});
+Route::get('/reportes', function () {
+    return view('reportes');
+});
 
