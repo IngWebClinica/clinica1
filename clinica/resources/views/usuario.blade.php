@@ -37,7 +37,7 @@
                         </li>
                         <li class="nav-item d-flex align-items-center menu_lateral--item">
                             <i class="material-icons">perm_contact_calendar</i>
-                            <a class="nav-link" href="#">Pacientes</a>
+                            <a class="nav-link" href="/pacientes">Pacientes</a>
                         </li>
                         <li class="nav-item d-flex  align-items-center menu_lateral--item">
                             <i class="material-icons">face</i>
