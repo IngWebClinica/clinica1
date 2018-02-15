@@ -22,8 +22,8 @@
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#servicios">Servicios</a>
-                <a class="nav-item nav-link" href="#">Especialidades</a>
-                <a class="nav-item nav-link" href="#">contactanos</a>
+                <a class="nav-item nav-link" href="#especialidad">Especialidades</a>
+                <a class="nav-item nav-link" href="#contactanos">contactanos</a>
                 <a class="nav-item nav-link text-warning" href="/login">login</a>
                 </div>
             </div>
@@ -61,8 +61,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--fin del MODULO DE SERVICIOS-->
+    </section><!--fin del MODULO DE SERVICIOS-->
     <!--inicio del MODULO DE ESPECIALIDAD-->
     <section id="especialidad" class="container-fluid bg-light pt-4 pb-5">
         <div class="container">
@@ -102,8 +101,46 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--fin del MODULO DE ESPECIALIDAD-->
+    </section><!--fin del MODULO DE ESPECIALIDAD-->
+    <!--inicio MODULO DE CONTATANOS-->
+    <section id="contactanos" class="container-fluid section-fluid d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="miCorreo@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nombre</label>
+                            <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Juan pedernales de la rivera">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1 ">Consulta</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning btn-lg">Submit</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <h6 class="text-warning">
+                        Telefono
+                    </h6>
+                    <p>051 978 789 345</p>
+                    <h6 class="text-warning">
+                        Dirreccion
+                    </h6>
+                    <p>Avenidad Miraflores S/N, Miraflores, Tacna 23000</p>
+                    <h6 class="text-warning">
+                        facebook
+                    </h6>
+                    <p>/clinica-UNJBG</p>
+                </div>
+            </div>
+        </div>
+    </section><!--end MODULO DE CONTACTANOS
+    <!--MODULO DE FOOTER-->
     <footer class="page-footer bg-dark">
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <div class="row m-4">
@@ -114,7 +151,7 @@
             </div>
             <p class="text-white">Contruido por<a href="#">Alvaromoca</a></p>
         </div>
-    </footer>
+    </footer><!--end MODULO DE FOOTER-->
 
 
     <!-- Optional JavaScript -->

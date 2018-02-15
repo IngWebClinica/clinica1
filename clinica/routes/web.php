@@ -10,10 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//esta funcion es para mostara la prncipal
-Route::get('/', function () {
-    return view('welcome');
-});
+
 //cuando enviamos los datos de login
 Route::post('/login','Auth\LoginController@login');
 Route::get('/login', function () {
@@ -40,8 +37,8 @@ Route::get('/atenciones', function () {
 Route::get('/reportes', function () {
     return view('reportes');
 });
-
-Route::get('/principal', function () {
+//esta funcion es para mostara la prncipal
+Route::get('/', function () {
     return view('inicio.inicio');
 });
 
