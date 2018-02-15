@@ -10,16 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//esta funcion es para mostara la prncipal
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/inicio', function () {
-    return view('inicio');
-});
+//cuando enviamos los datos de login
+Route::post('/login','Auth\LoginController@login');
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/inicio', function () {
+    return view('inicio');
+});
+
 Route::get('/usuario', 'UsuarioController@read');
 Route::post('/usuario','UsuarioController@create');
 Route::post('/usuario/{id}','UsuarioController@delete');
@@ -36,4 +40,9 @@ Route::get('/atenciones', function () {
 Route::get('/reportes', function () {
     return view('reportes');
 });
+
+Route::get('/principal', function () {
+    return view('inicio.inicio');
+});
+
 
